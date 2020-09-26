@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="is-black">
+    
+    <div class="columns layout">
+      <div class="column is-one-fifth has-background-dark ">
+        <SideNavbar />
+      </div>
+      <div class="column has-background-grey-dark">
+
+      </div>
+    </div>
+    
+    <div class="block has-background-primary player">
+      <h1> Hello </h1>
+    </div>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import SideNavbar from './components/SideNavbar';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SideNavbar
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  .layout {
+    height: 88vh;
+  }
+
+  
 </style>
+  
+
