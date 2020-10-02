@@ -54,7 +54,7 @@ export default {
         size: 64px;
     }
 
-    .highlight {
-        text-decoration-line: line-through;
+    .has-text-white {
+        cursor: pointer;
     }
 </style>
